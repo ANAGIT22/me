@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Componente from './components/Componente';
 import Propiedades from './components/Propiedades';
+import Estado from './components/Estado';
 function App() {
   return (
     <div className="App">
@@ -36,7 +37,8 @@ function App() {
          funcion= {(num) => num*num}
          ComponenteReact={<Componente msg="soy un componente pasado como props"/>}
          />
-         
+         <hr/>
+       <Estado/>
 
       </section>
       </header>
