@@ -4,6 +4,7 @@ import React from 'react';
 import Componente from './components/Componente';
 import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
+import RenderizadoCondicional from './components/RenderizadoCondicional';
 function App() {
   return (
     <div className="App">
@@ -39,6 +40,8 @@ function App() {
          />
          <hr/>
        <Estado/>
+       <hr/>
+       <RenderizadoCondicional/>
 
       </section>
       </header>
