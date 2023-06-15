@@ -68,7 +68,7 @@ export class EventosES7 extends Component{
         
     }
     
-    restar(e) {
+    restar = (e) => {
        
         console.log (this);
         this.setState({
@@ -90,13 +90,62 @@ export class EventosES7 extends Component{
                 </nav>
                 <h3>{this.state.contador}</h3>
                 
-               
-    
-    
+            
               
             </div>
         );
         }
     }
 
+       function Boton(props){
+        return <button onClick={props.myOnClick}>Boton hecho componente </button>
+       }
+       
+
+
+    export class MasSobreEventos extends Component{
+       handleClick = (e , mensaje) => {
+        console.log(e);
+        console.log(e.nativeEvent);
+        console.log(e.target);
+        console.log(e.nativeEvent.target);
+        console.log(mensaje);
+       }
+
+        render(){
+            return (
+                <div>
+                    <h2>Mas sobre Eventos</h2>
+                    <button 
+                    onClick={(e) =>
+                    this.handleClick(e ,"Pasando parametro desde un Evento")
+                
+                
+                }
+                    
+                    >
+                    Saludar
+                    
+                    </button>
+                    {/*Evento personalizado
+                     <Boton
+                 onClick ={(e) =>
+                    this.handleClick (e ,"Pasando parametro desde un Evento")
+
+                 }
+                 />
+                    
+                    */}
+                 <Boton
+                 myOnClick ={(e) =>
+                    this.handleClick (e ,"Pasando parametro desde un Evento")
+
+                 }
+                 />
+                </div>
+            )
+        }
+    
+    
+    }
 
