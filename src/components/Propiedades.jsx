@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import PropTypes from "prop-types";
 
 
@@ -31,3 +31,4 @@ Propiedades.propType = {
     numero:PropTypes.number.isRequired,
 
 }
+

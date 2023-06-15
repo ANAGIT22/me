@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React,{ Component } from "react";
 import data from "../helpers/data.json";
 
 function ElementoLista(props) {
